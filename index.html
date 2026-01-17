@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xeth — Personal Site</title>
+  <meta name="description" content="Xeth — writer, artist, and creator. Minimal, premium personal site shell." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Xeth home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Xeth</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <div class="nav-links" role="list">
+          <a href="#portfolio" role="listitem">Portfolio</a>
+          <a href="#resume" role="listitem">Resume</a>
+          <a href="#about" role="listitem">About</a>
+          <a href="#playground" role="listitem">Playground</a>
+          <a href="#contact" role="listitem">Contact</a>
+        </div>
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="sr-only">Toggle color theme</span>
+          <span class="theme-toggle-text">Light</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">xetharcamo.com</p>
+          <h1 id="hero-title">Xeth</h1>
+          <p class="hero-subtitle">Writer &amp; Artist — a premium space for stories, art, and experiments.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#portfolio">Portfolio</a>
+            <a class="button" href="#resume">Resume</a>
+            <a class="button ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="hero-glass" role="presentation">
+          <div class="glass-panel">
+            <p class="label">EDIT HERE</p>
+            <p class="glass-title">Short intro or signature quote.</p>
+            <p class="glass-meta">Last updated · 2026</p>
+          </div>
+          <div class="glass-panel mini">
+            <p class="label">Currently</p>
+            <p class="glass-title">Worldbuilding</p>
+            <p class="glass-meta">Drafting new series</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2 id="portfolio-title">Selected Works</h2>
+          </div>
+          <div class="segmented" role="tablist" aria-label="Portfolio categories">
+            <button class="segment active" role="tab" aria-selected="true" aria-controls="writing" data-tab="writing" id="tab-writing">Writing</button>
+            <button class="segment" role="tab" aria-selected="false" aria-controls="art" data-tab="art" id="tab-art">Art</button>
+          </div>
+        </div>
+
+        <div class="tab-panel active" id="writing" role="tabpanel" aria-labelledby="tab-writing" tabindex="0">
+          <div class="card-grid">
+            <!-- EDIT HERE: Writing placeholders -->
+            <article class="card" data-modal="Writing Project Alpha">
+              <p class="card-meta">Short Story · 2026</p>
+              <h3>Project Alpha</h3>
+              <p>Atmospheric narrative exploring memory.</p>
+            </article>
+            <article class="card" data-modal="Essay Series">
+              <p class="card-meta">Essay · 2025</p>
+              <h3>Essay Series</h3>
+              <p>Minimal reflections on craft and focus.</p>
+            </article>
+            <article class="card" data-modal="Worldbuilding Notes">
+              <p class="card-meta">Notes · 2026</p>
+              <h3>Worldbuilding Notes</h3>
+              <p>Systems, maps, and speculative ecology.</p>
+            </article>
+            <article class="card" data-modal="Speculative Fiction">
+              <p class="card-meta">Novella · 2024</p>
+              <h3>Speculative Fiction</h3>
+              <p>Cold oceans, quiet storms, and light.</p>
+            </article>
+            <article class="card" data-modal="Microfiction Set">
+              <p class="card-meta">Collection · 2023</p>
+              <h3>Microfiction Set</h3>
+              <p>Short-form experiments in voice.</p>
+            </article>
+            <article class="card" data-modal="Script Draft">
+              <p class="card-meta">Script · 2025</p>
+              <h3>Script Draft</h3>
+              <p>Dialogue-driven scene study.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="art" role="tabpanel" aria-labelledby="tab-art" tabindex="0">
+          <div class="card-grid">
+            <!-- EDIT HERE: Art placeholders -->
+            <article class="card" data-modal="Digital Painting">
+              <p class="card-meta">Digital Painting · 2026</p>
+              <h3>Silent Horizon</h3>
+              <p>Soft gradients and glacial lighting.</p>
+            </article>
+            <article class="card" data-modal="Concept Series">
+              <p class="card-meta">Concept Art · 2025</p>
+              <h3>Concept Series</h3>
+              <p>Architectural forms and scale.</p>
+            </article>
+            <article class="card" data-modal="Character Study">
+              <p class="card-meta">Illustration · 2025</p>
+              <h3>Character Study</h3>
+              <p>Portraits with subtle motion cues.</p>
+            </article>
+            <article class="card" data-modal="Material Explorations">
+              <p class="card-meta">Studies · 2024</p>
+              <h3>Material Explorations</h3>
+              <p>Glass, metal, and natural textures.</p>
+            </article>
+            <article class="card" data-modal="Poster Design">
+              <p class="card-meta">Poster · 2023</p>
+              <h3>Poster Design</h3>
+              <p>Minimal typography experiments.</p>
+            </article>
+            <article class="card" data-modal="Motion Frames">
+              <p class="card-meta">Frames · 2024</p>
+              <h3>Motion Frames</h3>
+              <p>Storyboard stills with depth.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Resume</p>
+            <h2 id="resume-title">Experience &amp; Focus</h2>
+          </div>
+          <button class="button ghost" type="button">Download PDF</button>
+        </div>
+
+        <div class="timeline">
+          <!-- EDIT HERE: Timeline items -->
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Creative Director · 2024 — Present</h3>
+              <p>Led narrative design and visual worldbuilding.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Freelance Writer · 2021 — 2024</h3>
+              <p>Crafted essays, fiction, and creative systems.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Visual Artist · 2018 — 2021</h3>
+              <p>Developed digital art and exhibition work.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="resume-grid">
+          <div class="glass-panel">
+            <p class="label">Skills</p>
+            <ul>
+              <li>Storycraft &amp; narrative design</li>
+              <li>Concept art &amp; visual systems</li>
+              <li>Creative direction</li>
+            </ul>
+          </div>
+          <div class="glass-panel">
+            <p class="label">Education</p>
+            <ul>
+              <li>BA, Visual Storytelling</li>
+              <li>Workshops &amp; residencies</li>
+              <li>Ongoing mentorships</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">Minimal bio</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="glass-panel">
+            <p class="label">EDIT HERE</p>
+            <p>Short, premium bio placeholder. Replace with a few sentences that set the tone and highlight the focus of your work.</p>
+          </div>
+          <div class="glass-panel mini">
+            <p class="label">Now</p>
+            <p>Building a long-form project and refining a new visual language.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="playground" aria-labelledby="playground-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Playground</p>
+            <h2 id="playground-title">Experiments &amp; Notes</h2>
+          </div>
+        </div>
+        <div class="card-grid playful">
+          <!-- EDIT HERE: Playground cards -->
+          <article class="card">
+            <p class="card-meta">Worldbuilding</p>
+            <h3>Atlas Project</h3>
+            <p>Cartography, lore, and cultural design.</p>
+          </article>
+          <article class="card">
+            <p class="card-meta">Tools</p>
+            <h3>Studio Toolkit</h3>
+            <p>Personal workflows for deep work.</p>
+          </article>
+          <article class="card">
+            <p class="card-meta">Blog Notes</p>
+            <h3>Field Notes</h3>
+            <p>Short thoughts on craft and growth.</p>
+          </article>
+          <article class="card">
+            <p class="card-meta">Collaborations</p>
+            <h3>Signal Lab</h3>
+            <p>Collaborative experiments and prompts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let’s connect</h2>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <form class="glass-panel" aria-label="Contact form">
+            <!-- EDIT HERE: Form fields -->
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@email.com" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="Share a quick note"></textarea>
+            </label>
+            <button class="button primary" type="submit">Send message</button>
+          </form>
+          <div class="glass-panel">
+            <p class="label">Social</p>
+            <ul class="social-list">
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>© 2026 Xeth. Built with HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" type="button" data-close="true" aria-label="Close modal">×</button>
+      <p class="eyebrow">Portfolio detail</p>
+      <h3 id="modal-title">Project</h3>
+      <p class="modal-body">Placeholder details about the selected project. Replace with summary, role, and links.</p>
+      <button class="button" type="button" data-close="true">Close</button>
+    </div>
+  </div>
+
+  <div class="reveal-sentinel" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
